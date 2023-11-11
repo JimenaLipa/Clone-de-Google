@@ -71,18 +71,23 @@ nav .nav-right-section img{
 /* MAIN */
 main {
     /* Agregar espacio entre header y main y centrar logo  */
-    margin-top: 80px;
+    margin-top: 10px;
     text-align: center;
 }
 main .main-logo{
-    width: 530px;
+    width: 600px;
     /* Centrar absolutamente gracias a los márgenes automáticos */
     /* Vertical // Horizontal */
     margin: 0 auto;
     margin-bottom: 32px;
 }
 main .main-logo img {
-    height: 95px;
+    height: 200px;
+    padding-right: 250px;
+    padding-left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .main-input{
@@ -164,7 +169,7 @@ footer .primer-barra{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin-top: 160px;
+    margin-top: 89px;
     margin-bottom: 1px;
     padding-left: 25px;
     background-color: #f2f2f2;
