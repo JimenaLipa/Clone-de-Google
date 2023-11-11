@@ -1,0 +1,208 @@
+body{
+    /* MARGIN--es un margen del elemento de los bordes del elemento hacia afuera */
+    margin: 0%;
+    /* PADDING -- es un margen del elemento de los bordes hacia adentro */
+    padding: 0%;
+    /*Fuentes del texto */
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+}
+/* **************************************************** */
+/* ********************************************* */
+/* ************************************ */
+/* NAVEGACIÓN */
+header{
+    /* with: ancho ---- height:largo */
+    width: 100%;
+    height: 60px;
+}
+
+/* Cuando queremos entrar a elementos dentro de elementos */
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habilíta usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 210px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+a{
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+}
+nav .nav-right-section a{
+    color: black;
+/* Margen derecho entre anclas */
+    margin-right: 20px;
+}
+
+/* Ícono del menú */
+nav .nav-right-section .menu {
+    /* Agregar ícono desde css */
+    background-image: url(https://cdn.icon-icons.com/icons2/2518/PNG/512/grid_dots_icon_151318.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    /* Para que no se repitan las imagenes */
+    background-repeat: no-repeat;
+
+}
+/* Imagen del usuario */
+nav .nav-right-section img{
+    /* Redondear bordes de imagen de usuario */
+    border-radius: 100px;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+}
+/* *********************************************************** */
+/* ****************************************************** */
+/* ************************************** */
+/* MAIN */
+main {
+    /* Agregar espacio entre header y main y centrar logo  */
+    margin-top: 80px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+main .main-logo img {
+    height: 95px;
+}
+
+main .main-input{
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde || borde-estilo|| borde color */
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 35px;
+    /* Quitar el borde */
+    border: none;
+/* Quitar el borde cuando está activo el input */
+    outline: none;
+    width: 430px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /* Para adecuar al tamaño del input container */
+    background-size: contain;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+main .main-boton{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 0%;
+}
+main .main-boton-container .buscar-boton{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    margin-top: 25px;
+    margin-right: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-boton-container .suerte-boton{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #f8f9fa;
+}
+footer .primer-barra{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 160px;
+    margin-bottom: 1px;
+    padding-left: 25px;
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .segunda-barra{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .segunda-barra .how-search{
+    margin-right: 200px;
+}
+footer .segunda-barra .priv{
+    margin-left: 200px;
+    margin-right: 1px ;
+}
+footer .segunda-barra .conditions{
+margin-left: 1px;
+margin-right: 1px;
+}
+footer .segunda-barra .prefer{
+margin-left: 1px;
+padding-right: 25px;
+}
+
